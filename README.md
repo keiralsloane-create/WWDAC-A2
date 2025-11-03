@@ -78,7 +78,3 @@ The sketch uses:
 
 
 
----
-
-## 🧰 Example Output
-**Serial Monitor:**
