@@ -43,6 +43,7 @@ This project is an Arduino-based **push-up counter** that uses an **HC-SR04 ultr
 
 ---
 
+## Setup
 ## Wiring Diagram
 
 | Component | Arduino Pin | Notes |
