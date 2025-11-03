@@ -5,9 +5,10 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 
+# HC-SR04 Push-Up Counter with TM1637 Display
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+This project is an Arduino-based **push-up counter** that uses an **HC-SR04 ultrasonic sensor** to detect motion and a **TM1637 4-digit display** to show your count. A buzzer gives feedback for every completed push-up.
 
 ---
 
@@ -16,18 +17,17 @@ This project is simple Lorem ipsum dolor generator.
 - Displays live count on a bright 4-digit LED display  
 - Beeps when a push-up is detected  
 - Includes a reset button to start fresh  
-- Optional Serial Monitor output for debugging  
+- Optional Serial Monitor output for debugging
+
+---
+
+## How It Works
+- When you move **close to the sensor** (<10 cm), it sets `trigDown = true`.  
+- When you move **away** (15–30 cm), it sets `trigUp = true`.  
+- When both movements occur, one push-up is counted.  
+- The buzzer beeps and the display increments.
 	
 ## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
-	
-# HC-SR04 Push-Up Counter with TM1637 Display
-
-An Arduino-based **push-up counter** that uses an **HC-SR04 ultrasonic sensor** to detect motion and a **TM1637 4-digit display** to show your count. A buzzer gives feedback for every completed push-up.
-
 ---
 
 ## Hardware Required
@@ -75,13 +75,7 @@ The sketch uses:
 4. Copy the `.ino` file into a new sketch folder  
 5. Click **Upload**
 
----
 
-## How It Works
-- When you move **close to the sensor** (<10 cm), it sets `trigDown = true`.  
-- When you move **away** (15–30 cm), it sets `trigUp = true`.  
-- When both movements occur, one push-up is counted.  
-- The buzzer beeps and the display increments.
 
 ---
 
