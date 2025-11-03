@@ -14,10 +14,9 @@ This project is an Arduino-based **push-up counter** that uses an **HC-SR04 ultr
 
 ## Features
 - Counts each full push-up automatically  
-- Displays live count on a bright 4-digit LED display  
+- Displays live count on a 4-digit LED display  
 - Beeps when a push-up is detected  
-- Includes a reset button to start fresh  
-- Optional Serial Monitor output for debugging
+- Includes a reset button to clear and restart  
 
 ---
 
@@ -25,7 +24,7 @@ This project is an Arduino-based **push-up counter** that uses an **HC-SR04 ultr
 - When you move **close to the sensor** (<10 cm), it sets `trigDown = true`.  
 - When you move **away** (15–30 cm), it sets `trigUp = true`.  
 - When both movements occur, one push-up is counted.  
-- The buzzer beeps and the display increments.
+- The buzzer beeps and the display increases by 1
 	
 ## Technologies
 ---
@@ -35,11 +34,11 @@ This project is an Arduino-based **push-up counter** that uses an **HC-SR04 ultr
 |------------|-----------|-------------|
 | Arduino Uno R4 WiFi (or compatible) | 1 | Main microcontroller |
 | HC-SR04 Ultrasonic Sensor | 1 | Detects push-up movement |
-| TM1637 4-Digit Display | 1 | Shows the current count |
+| TM1637 4-Digit Display | 1 | Displays current rep count |
 | Passive Buzzer | 1 | Provides sound feedback |
 | Push Button | 1 | Resets the counter |
-| Jumper Wires | several | For connections |
-| Breadboard | optional | For prototyping |
+| Jumper Wires | 13 | For connections |
+| Breadboard | 1 | For prototyping |
 
 ---
 
@@ -55,8 +54,6 @@ This project is an Arduino-based **push-up counter** that uses an **HC-SR04 ultr
 | **Buzzer** | 7 | Output signal |
 | **Reset Button** | 4 | Connect to GND when pressed |
 | **Power** | 5V & GND | Shared by all components |
-
-> 💡 Use the internal pull-up resistor for the reset button (`INPUT_PULLUP` in code).
 
 ---
 
