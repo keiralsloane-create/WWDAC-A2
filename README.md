@@ -1,11 +1,11 @@
-# demo2025
+# HC-SR04 Push-Up Counter with TM1637 Display
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
-# HC-SR04 Push-Up Counter with TM1637 Display
+
 
 ## General info
 This project is an Arduino-based **push-up counter** that uses an **HC-SR04 ultrasonic sensor** to detect motion and a **TM1637 4-digit display** to show your count. A buzzer gives feedback for every completed push-up.
