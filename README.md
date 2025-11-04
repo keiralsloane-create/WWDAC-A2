@@ -1,4 +1,4 @@
-# Push-Up Counter with Digital Display
+# Push-Up Rep Counter with Digital Display
 
 ## Table of contents
 * [General info](#general-info)
