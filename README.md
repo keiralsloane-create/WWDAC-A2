@@ -53,25 +53,16 @@ This project is an Arduino-based **push-up counter** that uses an **HC-SR04 ultr
 | **TM1637 DIO** | 12 | Data pin |
 | **Buzzer** | 7 | Output signal |
 | **Reset Button** | 4 | Connect to GND when pressed |
-| **Power** | 5V & GND | Shared by all components |
+| **Power** | 5V, 3.3v & GND | All components |
 
 ---
 
 ## Code Overview
-The sketch uses:
+This sketch uses:
 - `pulseIn()` to measure distance via the HC-SR04
 - Simple logic to detect “up” and “down” movements
 - The `TM1637Display` library to show the count
-- A buzzer tone to give feedback
-
----
-
-## How to Upload
-1. Open the Arduino IDE  
-2. Install the **TM1637Display** library by Avishay Orpaz (`Sketch > Include Library > Manage Libraries...`)  
-3. Select your board (**Arduino Uno R4 WiFi**)  
-4. Copy the `.ino` file into a new sketch folder  
-5. Click **Upload**
+- A buzzer sound to give feedback
 
 
 
