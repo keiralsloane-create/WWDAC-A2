@@ -1,4 +1,4 @@
-# HC-SR04 Push-Up Counter with TM1637 Display
+# Push-Up Counter with Digital Display
 
 ## Table of contents
 * [General info](#general-info)
